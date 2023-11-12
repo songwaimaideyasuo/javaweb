@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="javascipt:void(0)" onclick="del(30)" >删除</a>
+<script type="text/javascript">
+    function del(dno) {
+        if (window.confirm("亲，删了不可恢复哦！")){
+            document.location.href="/oa/dept/delete?deptno=" +dno;
+        }
+
+    }
+</script>
+
+
+</body>
+</html>

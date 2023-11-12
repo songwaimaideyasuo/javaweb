@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <!--修改页面-->
+    <servlet>
+        <servlet-name>modify</servlet-name>
+        <servlet-class>com.w.oa.web.action.DeptModifyServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>modify</servlet-name>
+        <url-pattern>/dept/modify</url-pattern>
+    </servlet-mapping>
+
+    <!--跳转到修改页面-->
+    <servlet>
+        <servlet-name>edit</servlet-name>
+        <servlet-class>com.w.oa.web.action.DeptEditServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>edit</servlet-name>
+        <url-pattern>/dept/edit</url-pattern>
+    </servlet-mapping>
+
+
+    <!--保存部门-->
+    <servlet>
+        <servlet-name>save</servlet-name>
+        <servlet-class>com.w.oa.web.action.DeptSaveServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>save</servlet-name>
+        <url-pattern>/dept/save</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>list</servlet-name>
+        <servlet-class>com.w.oa.web.action.DeptListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>list</servlet-name>
+        <url-pattern>/dept/list</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>detail</servlet-name>
+        <servlet-class>com.w.oa.web.action.DeptDetailServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>detail</servlet-name>
+        <url-pattern>/dept/detail</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>delete</servlet-name>
+        <servlet-class>com.w.oa.web.action.DeptDelServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>delete</servlet-name>
+        <url-pattern>/dept/delete</url-pattern>
+    </servlet-mapping>
+
+</web-app>
